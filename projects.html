@@ -124,7 +124,7 @@
 								Aug 20, 2024 &ndash; short answer questions.
 							</h6>
 
-							<p>
+							<p id="question-1">
 								xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx xxxx
 								xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx
 
@@ -141,7 +141,7 @@
 							<h6 class="fw-normal mb-4">
 								Aug 20, 2024 &ndash; short answer questions.
 							</h6>
-							<p>
+							<p id="question-2" id="question-2" style="word-wrap: break-word;">
 								xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx xxxx
 								xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx xxxx xxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxxxxxx
 							</p>
@@ -185,7 +185,7 @@
 						<a href="#" class="w-25 p-2 shadow-md rounded text-center text-decoration-none">
 							<img class="img-fluid rounded w-100" src="images/project1.jpg" alt="...">
 							<h3 class="h6 my-3 w-100">
-								<span class="text-dark">Project 1</span>
+								<span class="text-dark" id="project-1">Project 1</span>
 							</h3>
 						</a>
 					</div>
@@ -194,7 +194,7 @@
 						<a href="#" class="w-25 p-2 shadow-md rounded text-center text-decoration-none">
 							<img class="img-fluid rounded w-100" src="images/project2.jpg" alt="...">
 							<h3 class="h6 my-3 w-100">
-								<span class="text-dark">Project 2</span>
+								<span class="text-dark" id="project-2">Project 2</span>
 							</h3>
 						</a>
 					</div>
@@ -203,7 +203,7 @@
 						<a href="#" class="w-25 p-2 shadow-md rounded text-center text-decoration-none">
 							<img class="img-fluid rounded w-100" src="images/project3.jpg" alt="...">
 							<h3 class="h6 my-3 w-100">
-								<span class="text-dark">Project 3</span>
+								<span class="text-dark" id="project-3">Project 3</span>
 							</h3>
 						</a>
 					</div>
@@ -212,7 +212,7 @@
 						<a href="#" class="w-25 p-2 shadow-md rounded text-center text-decoration-none">
 							<img class="img-fluid rounded w-100" src="images/project4.jpg" alt="...">
 							<h3 class="h6 my-3 w-100">
-								<span class="text-dark">Project 4</span>
+								<span class="text-dark" id="project-4">Project 4</span>
 							</h3>
 						</a>
 					</div>
@@ -221,7 +221,7 @@
 						<a href="#" class="w-25 p-2 shadow-md rounded text-center text-decoration-none">
 							<img class="img-fluid rounded w-100" src="images/project5.jpg" alt="...">
 							<h3 class="h6 my-3 w-100">
-								<span class="text-dark">Project 5</span>
+								<span class="text-dark" id="project-5">Project 5</span>
 							</h3>
 						</a>
 					</div>
@@ -276,5 +276,56 @@
 	</div><!-- /#wrapper -->
 
 </body>
+
+<script>
+	let project1Name = prompt('Fill the text box for naming the project 1')
+	if (!project1Name){
+		project1Name = 'First project'
+	}
+	document.getElementById('project-1').innerText = project1Name
+
+	let project2Name = prompt('Fill the text box for naming the project 2')
+	if (!project2Name){
+		project2Name = 'Secound project'
+	}
+	document.getElementById('project-2').innerText = project2Name
+	
+	let project3Name = prompt('Fill the text box for naming the project 3')
+	if (!project3Name){
+		project3Name = 'Third project'
+	} 
+	document.getElementById('project-3').innerText = project3Name
+
+	let project4Name = prompt('Fill the text box for naming the project 4')
+	if (!project4Name){
+		project4Name = 'Mid-term Project'
+	} 
+	document.getElementById('project-4').innerText = project4Name
+	
+	let project5Name = prompt('Fill the text box for naming the project 5')
+	if (!project5Name){
+		project5Name = 'Final Project'
+	} 
+	document.getElementById('project-5').innerText = project5Name
+
+	let answer1 = 'The let keyword in JavaScript is used to declare variables with block scope, meaning the variable is only accessible within the block where it is defined (such as inside a function, loop, or conditional). It also prevents redeclaration within the same scope.'
+	document.getElementById('question-1').innerText = answer1
+
+	let answer2 = [
+		'A function in JavaScript is defined using the function keyword like this.',
+		'',
+		'function functionName(parameters)',
+		'　{ // function body }.',
+		'',
+		'Or using an arrow function.',
+		'',
+		'const functionName = (parameters) => { // function body };'].join('\n');
+
+	document.getElementById('question-2').innerText = answer2
+
+
+
+
+</script>
 
 </html>
